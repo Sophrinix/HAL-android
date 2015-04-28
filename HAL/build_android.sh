@@ -6,10 +6,15 @@
 # Licensed under the terms of the Apache Public License.
 # Please see the LICENSE included with this distribution for details.
 
+export JavaScriptCore_HOME="./android/x86/"
+
+
 set -e
 
+
 declare -rx VERBOSE=1
-declare -r HAL_DISABLE_TESTS="ON"
+declare -r HAL_DISABLE_TESTS="OFF"
+
 
 cmd+="cmake"
 cmd+=" -DHAL_DISABLE_TESTS=${HAL_DISABLE_TESTS}"
